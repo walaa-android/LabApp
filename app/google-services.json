@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "970159059744",
+    "firebase_url": "https://lab-medix-final-project.firebaseio.com",
+    "project_id": "lab-medix-final-project",
+    "storage_bucket": "lab-medix-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970159059744:android:5e188d6deafd70a55d5d45",
+        "android_client_info": {
+          "package_name": "com.example.labmedixapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970159059744-6v1m4o8cpe2bpble0b2nhdtnq1n54f8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.labmedixapplication",
+            "certificate_hash": "59edcc91c396ed189b635805f156131e275577fe"
+          }
+        },
+        {
+          "client_id": "970159059744-lngorjb922psjolj58fllrje5q7cl9qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrbwf2b4XsbARCwzZt3hEGl3EQiTs1o8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970159059744-lngorjb922psjolj58fllrje5q7cl9qb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

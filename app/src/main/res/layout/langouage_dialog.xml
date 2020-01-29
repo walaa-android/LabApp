@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/colorRegular"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#3C4245"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="English"
+            android:checked="true"
+            tools:ignore="RtlSymmetry"
+      />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Arabic"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:textColor="#3C4245"
+            />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/text_view_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="CANCLE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+
+            />
+
+        <TextView
+            android:id="@+id/text_view_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="OK" />
+    </LinearLayout>
+
+</LinearLayout>

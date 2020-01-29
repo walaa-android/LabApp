@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_view_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/flag_palestine"
+        android:paddingTop="8dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_view_code_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:text="@string/palestine"
+        android:textSize="18sp"
+        android:textColor="#000"
+        tools:ignore="RtlSymmetry" />
+
+
+</LinearLayout>

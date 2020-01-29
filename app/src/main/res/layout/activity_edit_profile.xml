@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/prof"
+    android:layout_height="match_parent"
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    tools:context=".activities.EditProfileActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorRegular"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/image_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_view_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/empty_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="130dp"
+        android:onClick="edit_photo"
+        app:srcCompat="@drawable/edit_photo" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="165dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            >
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorRegular"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_no"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            >
+
+            <TextView
+                android:id="@+id/text_view_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorRegular"
+                android:textSize="14sp"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            >
+
+            <TextView
+                android:id="@+id/text_view_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorRegular"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:elevation="2dp">
+            <TextView
+                android:id="@+id/text_view_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not added"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorRegular"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_off_birth"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+            <TextView
+                android:id="@+id/text_view_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not added"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/colorRegular"
+                android:onClick="add_date_of_birth"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+</ScrollView>

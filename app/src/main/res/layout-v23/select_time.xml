@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:id="@+id/layout_sheet"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_time_of_home_visit"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorRegular"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Day :"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="@color/colorRegular"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/edit_text_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/phone_shap"
+            android:ems="10"
+            android:hint="@string/day"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/colorRegular"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select time :"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="@color/colorRegular"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/edit_text_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/phone_shap"
+            android:ems="10"
+            android:hint="@string/am"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/colorRegular"
+            android:textSize="16sp"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/confirm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="20dp"
+            android:onClick="change_time"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/confirm_time"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

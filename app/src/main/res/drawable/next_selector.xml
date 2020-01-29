@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_keyboard_next"
+        android:state_focused="false" />
+    <item android:drawable="@drawable/next_list"
+        android:state_focused="true"
+        />
+</selector>

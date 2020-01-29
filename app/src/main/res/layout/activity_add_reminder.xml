@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_con"
+    tools:context=".activities.AddReminderActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/colorRegular"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/image_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="back"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_text_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:background="@drawable/phone_shap"
+            android:textColor="@color/colorRegular"
+            android:hint="@string/remind_me"
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/time_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:onClick="add_time_reminder"
+            android:paddingStart="60dp"
+            android:hint="12:12 AM"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:background="@drawable/select_time_reminder"
+            tools:ignore="RtlSymmetry">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/day_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="60dp"
+            android:onClick="add_date"
+            tools:ignore="RtlSymmetry"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:hint="Friday, 29 November 2019"
+            android:background="@drawable/select_date_calender"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="bottom"
+        android:onClick="save_reminder"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/save_remainder" />
+
+
+
+</FrameLayout>

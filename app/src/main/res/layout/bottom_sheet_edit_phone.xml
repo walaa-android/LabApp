@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Change your mobile number"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="We will sent a code to your new mobile number"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/phone_shap"
+        android:ems="10"
+        android:hint="@string/_0599_xxx_xxx"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/colorRegular"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="110dp"
+        android:onClick="change_time"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/save_data"
+        />
+
+
+</LinearLayout>

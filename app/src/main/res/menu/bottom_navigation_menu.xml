@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/home_vs"
+      />
+
+    <item
+        android:id="@+id/action_reports"
+        android:title="@string/action_reports"
+        android:icon="@drawable/reports"
+        />
+    <item
+        android:id="@+id/action_visit"
+        android:title="@string/h_visit"
+
+
+
+        />
+
+    <item
+        android:id="@+id/action_chats"
+        android:title="@string/action_chats"
+        android:icon="@drawable/ic_chat_black"
+
+        />
+
+
+
+    <item
+        android:id="@+id/action_account"
+        android:title="@string/action_account"
+        android:icon="@drawable/profile"
+        />
+
+</menu>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:id="@+id/athu"
+        android:background="@color/colorBackground"
+        tools:context=".activities.AthunPhoneActivity"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorBackground"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                app:srcCompat="@drawable/splash" />
+
+         <!--   <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/labmedix"
+                android:textColor="@color/colorButton"
+                android:textSize="27sp"
+               android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/l_a_b_o_r_a_t_o_r_y"
+                android:textColor="@color/colorBlackSplash"
+                android:fontFamily="@font/roboto_light"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:textSize="16sp"
+                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/enter_your_mobile_number"
+                android:textColor="@color/colorRegular"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:layout_marginStart="12dp"
+                android:text="@string/to_create_an_account_or_sign_in"
+                android:textColor="@color/colorRegular"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+
+                >
+                <EditText
+                    android:id="@+id/fieldPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:text="+972"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/phone"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fieldVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:hint="@string/code"
+                android:inputType="number"/>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:gravity="left"
+
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="left"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/please_choose_how_you_want_to_login"
+                android:textColor="@color/colorRegular"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <RadioButton
+                    android:id="@+id/radio_button_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="15dp"
+                    android:text="@string/user"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_laboratory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="15dp"
+                    android:text="@string/laboratory"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    tools:ignore="RtlSymmetry" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/phoneAuthFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/linearSignUpButtonsField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonStartVerification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:text="@string/start"
+                        android:layout_marginEnd="4dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/buttonVerifyPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/verify"/>
+
+                    <Button
+                        android:id="@+id/buttonResend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:text="@string/resend"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/sign_in"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signedInButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <Button
+                    android:id="@+id/signOutButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/signed_out"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_width="wrap_content" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
